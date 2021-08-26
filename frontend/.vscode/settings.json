@@ -3,9 +3,9 @@
     "editorError.foreground": "#00000000",
     "editorWarning.foreground": "#00000000",
     "editorInfo.foreground": "#00000000",
-    "activityBar.background": "#390E7F",
-    "titleBar.activeBackground": "#4F14B1",
-    "titleBar.activeForeground": "#FBFAFE"
+    "activityBar.background": "#fbff00af",
+    "titleBar.activeBackground": "#fffb00",
+    "titleBar.activeForeground": "#000000"
   },
   "bloop.openOnSuggestionsAvailable": false
 }
