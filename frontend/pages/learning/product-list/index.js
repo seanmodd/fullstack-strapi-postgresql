@@ -1,5 +1,4 @@
-import { Heading, Image, Text, VStack, Box, Stack } from '@chakra-ui/react';
-import ChangingColor from 'components/ChangingColor';
+import { Heading, Image, Text, VStack, Stack } from '@chakra-ui/react';
 import faker from 'faker';
 import Link from 'next/link';
 
@@ -12,7 +11,7 @@ function App() {
         <VStack p="10px" borderWidth="2px">
           <Text my="0px">Product 1</Text>
 
-          <Link href="/learning/product-list/product 1">
+          <Link href="/learning/product-list/product 1" passHref>
             <Image
               boxSize="100px"
               py="0px"
@@ -25,7 +24,7 @@ function App() {
         </VStack>
         <VStack p="10px" borderWidth="2px">
           <Text my="0px">Product 2</Text>
-          <Link href="/learning/product-list/product 2">
+          <Link href="/learning/product-list/product 2"  passHref>
             <Image
               boxSize="100px"
               py="0px"
@@ -38,7 +37,7 @@ function App() {
         </VStack>
         <VStack p="10px" borderWidth="2px">
           <Text my="0px">Product 3</Text>
-          <Link href="/learning/product-list/product 3">
+          <Link href="/learning/product-list/product 3"  passHref>
             <Image
               boxSize="100px"
               py="0px"

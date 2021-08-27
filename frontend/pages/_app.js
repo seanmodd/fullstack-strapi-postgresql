@@ -2,7 +2,7 @@ import { DefaultSeo } from 'next-seo';
 import { motion } from 'framer-motion';
 import { ChakraProvider } from '@chakra-ui/react';
 import SEO from 'next-seo.config';
-import { theme, myTheme } from 'styles/theme';
+import { theme } from 'styles/theme';
 import '../styles/Navbar.css';
 import Navbar from 'components/Navbar';
 import Footer from 'components/Footer';

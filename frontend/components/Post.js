@@ -1,7 +1,7 @@
 import * as moment from 'moment';
 import Link from 'next/link';
 // import moment from 'moment';
-import { Heading, useColorMode, Stack, HStack } from '@chakra-ui/react';
+import { Heading, useColorMode, Stack, HStack, Box } from '@chakra-ui/react';
 
 export default function Post({
   postId,
@@ -11,12 +11,9 @@ export default function Post({
   postSlug,
   postUpdated,
 }) {
-  const day = new Date(2011, 9, 16);
-  const dayWrapper = moment(day);
-  console.log(dayWrapper._i);
-  console.log(dayWrapper.format('dddd, MMMM Do YYYY'));
 
-  const { colorMode, toggleColorMode } = useColorMode();
+
+  const { colorMode } = useColorMode();
 
   return (
     <Stack
@@ -28,7 +25,7 @@ export default function Post({
       px="10px"
       key={postId}
     >
-      <Link href={`/strapi-next/${postSlug}`}>
+      <Link href={`/strapi-next/${postSlug}`} passHref>
         <Heading
           _hover={{
             color: colorMode === 'dark' ? '#ff00ea' : '#ff00ea',
@@ -43,6 +40,9 @@ export default function Post({
           {postTitle}
         </Heading>
       </Link>
+      <Box>
+        <button className="retro">read more</button>
+      </Box>
       <HStack pt="20px" spacing="20%" fontWeight="semibold" justify="center">
         <Stack spacing="0px">
           <p>posted by: </p>

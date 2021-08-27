@@ -9,14 +9,12 @@ function Form() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
     setUserInfo(data);
 
-    console.log(data);
   };
   return (
     <div className="back">

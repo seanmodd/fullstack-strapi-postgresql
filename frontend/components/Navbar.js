@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import { signIn, signOut, useSession } from 'next-auth/client';
-import { SimpleGrid, Box, Heading, GridItem } from '@chakra-ui/react';
-import SeanNavbar from './SeanNavbar';
-import DarkModeSwitch from './DarkModeSwitch';
+import { SimpleGrid, Box } from '@chakra-ui/react';
 
 function Navbar() {
   const [session, loading] = useSession();

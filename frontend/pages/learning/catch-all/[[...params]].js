@@ -1,20 +1,14 @@
-import faker from 'faker';
 import { useRouter } from 'next/router';
 import {
   Heading,
-  Image,
   Text,
   VStack,
-  Box,
-  Stack,
-  Button,
 } from '@chakra-ui/react';
-import Link from 'next/link';
 
 const App = () => {
   const router = useRouter();
   const { params = [] } = router.query;
-  console.log(params);
+  
 
   if (params.length === 2) {
     return (

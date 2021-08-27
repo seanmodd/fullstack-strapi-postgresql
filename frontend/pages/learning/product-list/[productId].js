@@ -1,13 +1,9 @@
-import faker from 'faker';
 import { useRouter } from 'next/router';
 import {
   Heading,
-  Image,
   Text,
   VStack,
-  Box,
   Stack,
-  Button,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 
@@ -19,7 +15,7 @@ const ProductDetail = () => {
     <>
       <VStack pt="50px">
         <Heading>Details about {productId}</Heading>
-        <Link href="/learning/product-list">
+        <Link href="/learning/product-list"  passHref>
           <button style={{ marginTop: '20px' }}>view all products</button>
         </Link>
         <Stack py="15px" direction="row">

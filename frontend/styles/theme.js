@@ -89,7 +89,7 @@ export const theme = extendTheme({
             ? '1px 1px 1px 1px #aaaaaa47;'
             : '1px 1px 1px 1px #0000ff0;',
         color: props.colorMode === 'dark' ? '#6f00ff' : '#6f00ff',
-        fontWeight: 'normal',
+        // fontWeight: 'normal',
         // textShadow: '1px 1px 0.2px rgba(0, 0, 255, .2);',
         // borderWidth: '1px',
         borderRadius: '10px',
@@ -99,9 +99,9 @@ export const theme = extendTheme({
           // borderColor: '#0022e4',
           // bg: 'purple.400',
           transition: 'all 0.5s ease-in-out',
-          color: props.colorMode === 'dark' ? '#ff00ea' : '#ff00ea',
-          fontWeight: 'bold',
-          fontSize: '18px',
+          // color: props.colorMode === 'dark' ? '#ff00ea' : '#ff00ea',
+          // fontWeight: 'bold',
+          // fontSize: '18px',
           // boxShadow:
           //   props.colorMode === 'dark'
           //     ? '2px 2px 2px 1px #aaaaaaca;'

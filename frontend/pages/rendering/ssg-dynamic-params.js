@@ -1,5 +1,4 @@
-import { Heading, Image, Text, VStack, Box, Stack } from '@chakra-ui/react';
-import ChangingColor from 'components/ChangingColor';
+import { Heading, Image, Text, VStack, Stack } from '@chakra-ui/react';
 import faker from 'faker';
 
 function App() {

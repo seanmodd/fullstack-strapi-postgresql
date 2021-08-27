@@ -9,12 +9,11 @@ import {
 const ChangingColor = () => {
   const color = useColorModeValue('#ff0000', '#00ff37');
 
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode, } = useColorMode();
   const bgColor = {
     light: 'gray.300',
     dark: 'red.500',
   };
-  console.log(colorMode);
   return (
     <>
       <VStack>

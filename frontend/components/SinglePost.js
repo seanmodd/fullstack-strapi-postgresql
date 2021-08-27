@@ -19,12 +19,9 @@ export default function SinglePost({
   postContent,
   postUpdated,
 }) {
-  const day = new Date(2011, 9, 16);
-  const dayWrapper = moment(day);
-  console.log(dayWrapper._i);
-  console.log(dayWrapper.format('dddd, MMMM Do YYYY'));
 
-  const { colorMode, toggleColorMode } = useColorMode();
+
+  const { colorMode } = useColorMode();
 
   return (
     <Stack
@@ -36,7 +33,7 @@ export default function SinglePost({
       key={postId}
     >
       <Box>
-        <Link href="/strapi-next">
+        <Link href="/strapi-next" passHref>
           <button>go back</button>
         </Link>
       </Box>

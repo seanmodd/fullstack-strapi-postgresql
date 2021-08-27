@@ -12,15 +12,12 @@ import {
   Image,
 } from '@chakra-ui/react';
 import { DragHandleIcon } from '@chakra-ui/icons';
-import { signIn, signOut, useSession } from 'next-auth/client';
 import Link from 'next/link';
-import { MyButton } from '../styles/theme';
 
 import DarkModeSwitch from './DarkModeSwitch';
 
 const SeanNavbar = () => {
-  const [session, loading] = useSession();
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const iconColor = {
     light: '#1d1d1d',
     dark: '#d400ff',
@@ -262,7 +259,7 @@ const SeanNavbar = () => {
 
 export default SeanNavbar;
 
-export const MyTitle = ({ children }) => (
+export const MyTitle = () => (
   <HStack py="20px" mt="5px" mb="20px" align="center" justify="center">
     <DarkModeSwitch />
     <HStack spacing="-15px">

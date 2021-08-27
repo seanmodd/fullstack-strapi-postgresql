@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getSession, signIn, useSession } from 'next-auth/client';
-
-const { Heading, VStack } = require('@chakra-ui/react');
+import { VStack, Heading } from '@chakra-ui/react';
 
 function Dashboard() {
   const [loading, setLoading] = useState(true);
@@ -10,7 +9,6 @@ function Dashboard() {
   useEffect(() => {
     const securePage = async () => {
       const session = await getSession();
-      console.log({ session });
       if (!session) {
         signIn();
       } else {

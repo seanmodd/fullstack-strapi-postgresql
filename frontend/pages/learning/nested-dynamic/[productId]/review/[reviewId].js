@@ -1,13 +1,9 @@
-import faker from 'faker';
 import { useRouter } from 'next/router';
 import {
   Heading,
-  Image,
   Text,
   VStack,
-  Box,
   Stack,
-  Button,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 
@@ -18,7 +14,7 @@ const ProductDetail = () => {
   return (
     <>
       <VStack pt="50px">
-        <Link href="/learning/nested-dynamic">
+        <Link href="/learning/nested-dynamic"  passHref>
           <button style={{ marginTop: '0px' }}>go back</button>
         </Link>
         <Heading pt="50px">
