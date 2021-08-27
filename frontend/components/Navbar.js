@@ -6,9 +6,9 @@ import DarkModeSwitch from './DarkModeSwitch';
 
 function Navbar() {
   const [session, loading] = useSession();
-  console.log(
-    `Here is the session: ${session} Here is the loading: ${loading}`
-  );
+  // console.log(
+  //   `Here is the session: ${session} Here is the loading: ${loading}`
+  // );
   return (
     <>
       <nav className="main-nav">
@@ -65,6 +65,40 @@ function Navbar() {
                 </a>
               </Link>
             )}
+          </Box>
+        </SimpleGrid>
+        <SimpleGrid
+          justifyContent="center"
+          alignItems="center"
+          px="300px"
+          pb="0px"
+          minChildWidth="160px"
+          spacing="0px"
+        >
+          <Box h="45px">
+            <Link href="/strapi-next">
+              <a>Strapi-Next</a>
+            </Link>
+          </Box>
+          <Box h="45px">
+            <Link href="/strapi-next">
+              <a>Strapi-Next</a>
+            </Link>
+          </Box>
+          <Box h="45px">
+            <Link href="/strapi-next">
+              <a>Strapi-Next</a>
+            </Link>
+          </Box>
+          <Box h="45px">
+            <Link href="/strapi-next">
+              <a>Strapi-Next</a>
+            </Link>
+          </Box>
+          <Box h="45px">
+            <Link href="/strapi-next">
+              <a>Strapi-Next</a>
+            </Link>
           </Box>
         </SimpleGrid>
       </nav>

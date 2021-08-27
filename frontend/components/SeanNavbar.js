@@ -9,12 +9,13 @@ import {
   MenuDivider,
   HStack,
   Box,
+  Image,
 } from '@chakra-ui/react';
 import { DragHandleIcon } from '@chakra-ui/icons';
 import { signIn, signOut, useSession } from 'next-auth/client';
 import Link from 'next/link';
 import { MyButton } from '../styles/theme';
-import Star from './Star';
+
 import DarkModeSwitch from './DarkModeSwitch';
 
 const SeanNavbar = () => {
@@ -264,10 +265,19 @@ export default SeanNavbar;
 export const MyTitle = ({ children }) => (
   <HStack py="20px" mt="5px" mb="20px" align="center" justify="center">
     <DarkModeSwitch />
-    <h1 className="logos">
-      {/* <a href="#">NextAuth</a> */}
-      NextAuth
-    </h1>
+    <HStack spacing="-15px">
+      <h1 className="logos">Next</h1>
+      <Image
+        p="0px"
+        m="0px"
+        pl="8px"
+        // boxSize="100px"
+        // objectFit="cover"
+        src="https://res.cloudinary.com/seanmodd/image/upload/v1629613336/face_4_66893dfd52.png"
+        alt="Logo"
+      />
+      <h1>Auth</h1>
+    </HStack>
     <SeanNavbar />
   </HStack>
 );

@@ -3,9 +3,21 @@
     "editorError.foreground": "#00000000",
     "editorWarning.foreground": "#00000000",
     "editorInfo.foreground": "#00000000",
-    "activityBar.background": "#fbff00af",
-    "titleBar.activeBackground": "#fffb00",
-    "titleBar.activeForeground": "#000000"
+    "activityBar.background": "#fcff39",
+    "titleBar.activeBackground": "#fbff06",
+    "titleBar.activeForeground": "#15202b",
+    "activityBar.activeBackground": "#fcff39",
+    "activityBar.activeBorder": "#00bcbf",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#00bcbf",
+    "activityBarBadge.foreground": "#15202b",
+    "statusBar.background": "#fbff06",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#cfd200",
+    "titleBar.inactiveBackground": "#fbff0699",
+    "titleBar.inactiveForeground": "#15202b99"
   },
-  "bloop.openOnSuggestionsAvailable": false
+  "bloop.openOnSuggestionsAvailable": false,
+  "peacock.color": "#fbff06"
 }
