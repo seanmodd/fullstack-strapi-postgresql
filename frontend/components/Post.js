@@ -1,4 +1,5 @@
 import * as moment from 'moment';
+import Link from 'next/link';
 // import moment from 'moment';
 import { Heading, useColorMode, Stack, HStack } from '@chakra-ui/react';
 
@@ -7,6 +8,7 @@ export default function Post({
   postUsername,
   postTitle,
   postPublished,
+  postSlug,
   postUpdated,
 }) {
   const day = new Date(2011, 9, 16);
@@ -15,10 +17,7 @@ export default function Post({
   console.log(dayWrapper.format('dddd, MMMM Do YYYY'));
 
   const { colorMode, toggleColorMode } = useColorMode();
-  const iconColor = {
-    light: '#1d1d1d',
-    dark: '#ff00ea',
-  };
+
   return (
     <Stack
       borderRadius="10px"
@@ -29,19 +28,21 @@ export default function Post({
       px="10px"
       key={postId}
     >
-      <Heading
-        _hover={{
-          color: colorMode === 'dark' ? '#ff00ea' : '#ff00ea',
-          transition: 'all 0.2s ease-in-out',
-        }}
-        mb="10px"
-        transition="all 0.2s ease-in-out"
-        cursor="pointer"
-        letterSpacing="2.5px"
-        textTransform="uppercase"
-      >
-        {postTitle}
-      </Heading>
+      <Link href={`/strapi-next/${postSlug}`}>
+        <Heading
+          _hover={{
+            color: colorMode === 'dark' ? '#ff00ea' : '#ff00ea',
+            transition: 'all 0.2s ease-in-out',
+          }}
+          mb="10px"
+          transition="all 0.2s ease-in-out"
+          cursor="pointer"
+          letterSpacing="2.5px"
+          textTransform="uppercase"
+        >
+          {postTitle}
+        </Heading>
+      </Link>
       <HStack pt="20px" spacing="20%" fontWeight="semibold" justify="center">
         <Stack spacing="0px">
           <p>posted by: </p>

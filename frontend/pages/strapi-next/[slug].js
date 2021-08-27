@@ -1,10 +1,17 @@
 import { Heading, VStack } from '@chakra-ui/react';
+import SinglePost from 'components/SinglePost';
 
 export default function Post({ post }) {
   return (
     <VStack>
-      <Heading>This is a Post!</Heading>
-      <Heading>{post.Title}</Heading>
+      <SinglePost
+        postId={post.id}
+        postUsername={post.User.username}
+        postTitle={post.Title}
+        postUpdated={post.updated_at}
+        postPublished={post.published_at}
+        postContent={post.Content}
+      />
     </VStack>
   );
 }
@@ -16,11 +23,9 @@ export async function getStaticPaths() {
   const res = await fetch('http://localhost:1337/posts');
   const posts = await res.json();
 
-  const paths = posts.map((post) => {
-    {
-      post.Slug;
-    }
-  });
+  const paths = posts.map((post) => ({
+    params: { slug: post.Slug },
+  }));
 
   return {
     paths,
@@ -39,4 +44,3 @@ export async function getStaticProps({ params }) {
     props: { post },
   };
 }
-

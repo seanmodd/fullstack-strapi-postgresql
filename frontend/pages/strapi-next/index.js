@@ -23,6 +23,7 @@ export default function Home({ posts }) {
               postTitle={post.Title}
               postUpdated={post.updated_at}
               postPublished={post.published_at}
+              postSlug={post.Slug}
             />
           ))}
       </Stack>
